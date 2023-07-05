@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
 html, body {
@@ -41,6 +42,7 @@ header nav.desktop ul li {
     float: left;
     font-size: 23px;
     padding: 0 20px;
+    font-style: italic;
 }
 
 header nav.desktop ul li a {
@@ -50,9 +52,7 @@ header nav.desktop ul li a {
 
 section.banner {
     width: 100%;
-    height: calc(100vh - 130px);
-    min-height: 600px;
-    max-height: 800px;
+    height: 600px;
     background-color: black;
     background-image: url(../assets/bg.jpg);
     background-size: contain;
@@ -60,11 +60,78 @@ section.banner {
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px) {
+section.banner .text-banner {
+    padding: 100px;
+}
+
+section.banner .text-banner .text-banner-single {
+    width: 314px;
+    height: 80px;
+    margin-top: 20px;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 23px;
+    background-image: url(../assets/box-text.png);
+    background-size: 100% 100%;
+}
+
+section.banner .text-banner .text-banner-single:nth-of-type(2) {
+    width: 230px;
+    height: 80px;
+    position: relative;
+    left: -10px;
+}
+
+section.banner .text-banner .text-banner-single:nth-of-type(3) {
+    width: 200px;
+    height: 80px;
+    position: relative;
+    left: -20px;
+}
+
+section.banner .text-banner .text-banner-single:nth-of-type(4) {
+    font-size: 21px;
+    width: 320px;
+    height: 70px;
+    color: black;
+    position: relative;
+    left: -30px;
+    background-image: url(../assets/box-white-text.png);
+}
+
+@media screen and (max-width: 1400px) {
+    
+    section.banner {
+        background-size: 90% auto;
+        background-position: 200% 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     
     section.banner {
         height: 70vw;
-        min-height: 0px;
-        max-height: 800px;
+        min-height: 500px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    nav.desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    section.banner .text-banner {
+        padding: 40px;
+    }
+    
+    section.banner .text-banner .text-banner-single {
+        font-size: 18px;
+        height: 70px !important;
     }
 }
