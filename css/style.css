@@ -28,6 +28,40 @@ header div.logo {
     float: left;
 }
 
+header nav.mobile {
+    float: right;
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    background-image: url(../assets/icon-menu.png);
+    display: none;
+    margin-top: 40px;
+}
+
+header nav.mobile ul {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 120px;
+    background-color: white;
+    text-align: center;
+    z-index: 1;
+    border-bottom: 4px solid #EB2D2D;
+}
+
+header nav.mobile ul li {
+    font-size: 23px;
+    padding: 20px 0px;
+    font-style: italic;
+}
+
+header nav.mobile ul li a {
+    text-decoration: none;
+    color: black;
+}
+
 header nav.desktop {
     float: right;
     position: relative;
@@ -48,6 +82,10 @@ header nav.desktop ul li {
 header nav.desktop ul li a {
     color: black;
     text-decoration: none;
+}
+
+header nav.desktop ul li a[href^="index"] {
+    color: #EB2D2D;
 }
 
 section.banner {
@@ -100,6 +138,35 @@ section.banner .text-banner .text-banner-single:nth-of-type(4) {
     background-image: url(../assets/box-white-text.png);
 }
 
+section.vehicle-highlight {
+    padding: 60px 2%;
+}
+
+section.vehicle-highlight h2 {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+section.vehicle-highlight .line-title {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section.vehicle-highlight .line-title .ln1 {
+   position: absolute;
+   height: 2px;
+   width: 100%;
+   background-color: black;
+   top: 20px;
+}
+
 @media screen and (max-width: 1400px) {
     
     section.banner {
@@ -119,12 +186,17 @@ section.banner .text-banner .text-banner-single:nth-of-type(4) {
 }
 
 @media screen and (max-width: 860px) {
-    nav.desktop {
+
+    header nav.desktop {
         display: none;
+    }
+
+    header nav.mobile {
+        display: block;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 580px) {
 
     section.banner .text-banner {
         padding: 40px;
