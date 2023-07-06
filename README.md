@@ -2,4 +2,4 @@
 
 Landing page para a RM Veículos (Loja de automóveis)
 
-Muita coisa a ser feita. Nem 30% pronto ainda... <br> Projeto em desenvolvimento <br> Aplicar responsivo e JavaScript <br> Obs. Arrumar o responsivo para dispositivos menores. (Galaxy Fold Ex)
+Terminar a Section de Veículos em Destaque <br> Projeto ainda em desenvolvimento <br> Aplicar responsivo e JavaScript <br> Obs. Arrumar o responsivo para dispositivos menores. (Galaxy Fold Ex)
