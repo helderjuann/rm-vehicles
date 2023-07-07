@@ -142,7 +142,14 @@ section.vehicle-highlight {
     padding: 60px 2%;
 }
 
-section.vehicle-highlight h2 {
+section.vehicle-highlight .line-title {
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section.vehicle-highlight .line-title h2 {
     position: relative;
     background-color: white;
     text-align: center;
@@ -150,14 +157,7 @@ section.vehicle-highlight h2 {
     text-transform: uppercase;
     display: inline-block;
     padding: 0 20px;
-}
-
-section.vehicle-highlight .line-title {
-    position: relative;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
+} 
 
 section.vehicle-highlight .line-title .ln1 {
    position: absolute;
@@ -165,6 +165,72 @@ section.vehicle-highlight .line-title .ln1 {
    width: 100%;
    background-color: black;
    top: 20px;
+}
+
+section.vehicle-highlight .container {
+    max-width: 1000px;
+    padding: 40px 0;
+}
+
+section.vehicle-highlight .container .showcase-highlight {
+    float: left;
+    width: 33.3%;
+}
+
+section.vehicle-highlight .container .showcase-highlight .car-img {
+    width: 100%;
+    padding-top: 100%;
+    background-size: 100% 100%;
+    border: 8px solid white;
+}
+
+section.vehicle-highlight .container .showcase-highlight .one {
+    background-image: url(../assets/car-1.jpg);
+}
+
+section.vehicle-highlight .container .showcase-highlight .two {
+    background-image: url(../assets/car-2.jpg);
+}
+
+section.vehicle-highlight .container .showcase-highlight .three {
+    background-image: url(../assets/car-3.jpg);
+    transform: scaleX(-1);
+}
+
+section.vehicle-highlight .container .showcase-highlight .car-info h2 {
+    padding-left: 8px;
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+
+section.vehicle-highlight .container .showcase-highlight .car-info p {
+    padding-left: 8px;
+    color: #353535;
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 8px;
+}
+
+section.vehicle-highlight .container .showcase-highlight .car-info a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    background-color: #EB2D2D;
+    margin-left: 8px;
+    margin-top: 10px;
+    display: block;
+    border: 0;
+    line-height: 45px;
+}
+
+section.vehicle-highlight .container .showcase-highlight .car-info a:hover {
+    transition: 250ms ease-out;
+    background-color: #B21E1E;
 }
 
 @media screen and (max-width: 1400px) {
@@ -194,6 +260,27 @@ section.vehicle-highlight .line-title .ln1 {
     header nav.mobile {
         display: block;
     }
+
+    section.vehicle-highlight .line-title h2 {
+        font-size: 23px;
+    } 
+
+    section.vehicle-highlight .container {
+        max-width: 1000px;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    section.vehicle-highlight .container .showcase-highlight {
+        width: 65%;
+        float: none;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    section.vehicle-highlight .container .showcase-highlight .car-info a {
+       display: inline-block;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -205,5 +292,9 @@ section.vehicle-highlight .line-title .ln1 {
     section.banner .text-banner .text-banner-single {
         font-size: 18px;
         height: 70px !important;
+    }
+
+    section.vehicle-highlight .container .showcase-highlight {
+        width: 80%;
     }
 }
