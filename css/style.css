@@ -15,7 +15,7 @@ html, body {
 
 .container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -145,7 +145,7 @@ section.vehicle-highlight {
 section.vehicle-highlight .line-title {
     position: relative;
     text-align: center;
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -218,13 +218,11 @@ section.vehicle-highlight .container .showcase-highlight .car-info a {
     text-decoration: none;
     font-style: italic;
     text-align: center;
-    width: 150px;
-    height: 50px;
+    width: 100px;
     background-color: #EB2D2D;
     margin-left: 8px;
     margin-top: 10px;
     display: block;
-    border: 0;
     line-height: 45px;
 }
 
@@ -233,12 +231,136 @@ section.vehicle-highlight .container .showcase-highlight .car-info a:hover {
     background-color: #B21E1E;
 }
 
+section.services-description {
+    display: flex;
+}
+
+section.services-description .half-one {
+    width: 50%;
+    padding: 90px 0;
+    background-color: #242424;
+    color: white;
+    text-align: right;
+}
+
+section.services-description .half-one .half-one-wraper {
+    display: inline-block;
+    text-align: left;
+    padding-right: 100px;
+}
+
+section.services-description .half-one .half-one-wraper h2 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 30px;
+}
+
+section.services-description .half-one .half-one-wraper ul {
+    margin-top: 20px;
+    list-style-position: inside;
+    display: inline-block;
+    font-size: 20px;
+}
+
+section.services-description .half-one .half-one-wraper a {
+    margin-left: 40px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    text-align: center;
+    width: 100px;
+    background-color: #EB2D2D;
+    display: inline-block;
+    line-height: 45px;
+    vertical-align: bottom;
+}
+
+section.services-description .half-one .half-one-wraper a:hover {
+    transition: 250ms ease-out;
+    background-color: #B21E1E;
+}
+
+section.services-description .half-two {
+    width: 50%;
+    padding: 90px 100px;
+    background-color: #EB2D2D;
+    color: white;
+}
+
+section.services-description .half-two h2 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 30px;
+}
+
+section.services-description .half-two .statement-single {
+    margin-top: 20px;
+}
+
+section.services-description .half-two .statement-single p {
+    font-size: 20px;
+}
+
+section.services-description .half-two .statement-single .navigation {
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    max-width: 700px;
+}
+
+section.services-description .half-two .statement-single .navigation .arrows {
+    float: left;
+}
+
+section.services-description .half-two .statement-single .navigation .arrows img {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+section.services-description .half-two .statement-single .navigation .name-statement {
+    float: right;
+    color: #252525;
+    font-size: 23px;
+}
+
 @media screen and (max-width: 1400px) {
     
     section.banner {
         background-size: 90% auto;
         background-position: 200% 100%;
     }
+
+    section.services-description {
+        flex-direction: column;
+    }
+
+    section.services-description .half-one {
+        text-align: left;
+        padding: 70px 100px;
+    }
+
+    section.services-description .half-one, section.services-description .half-two {
+        width: 100%;
+    }
+
+    /* section.services-description {
+        display: inline-block;
+    }
+
+    section.services-description .half-one {
+        width: 100%;
+        text-align: center;
+    }
+
+    section.services-description .half-two {
+        width: 100%;
+    }
+
+    section.services-description .half-two .statement-single .navigation {
+        width: 100%;
+        max-width: 1400px;
+    } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -281,6 +403,20 @@ section.vehicle-highlight .container .showcase-highlight .car-info a:hover {
     section.vehicle-highlight .container .showcase-highlight .car-info a {
        display: inline-block;
     }
+
+    section.services-description .half-one .half-one-wraper a {
+        display: block;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    section.services-description .half-one .half-one-wraper li {
+        font-size: 18px;
+    }
+
+    section.services-description .half-two .statement-single p {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -296,5 +432,9 @@ section.vehicle-highlight .container .showcase-highlight .car-info a:hover {
 
     section.vehicle-highlight .container .showcase-highlight {
         width: 80%;
+    }
+
+    section.services-description .half-one .half-one-wraper li:nth-last-of-type(1) {
+        display: none;
     }
 }
