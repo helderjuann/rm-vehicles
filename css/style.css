@@ -88,6 +88,26 @@ header nav.desktop ul li a[href^="index"] {
     color: #EB2D2D;
 }
 
+header nav.desktop ul li a:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid #252525;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in;
+}
+
+header nav.desktop ul li a[href^="index"]:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid #EB2D2D;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in;
+}
+
+header nav.desktop ul li a:hover:after {
+    transform: scale(1);
+}
+
 section.banner {
     width: 100%;
     height: 600px;
@@ -324,6 +344,151 @@ section.services-description .half-two .statement-single .navigation .name-state
     font-size: 23px;
 }
 
+section.contact {
+    padding: 60px 2%;
+}
+
+section.contact .line-title {
+    position: relative;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section.contact .line-title h2 {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 20px;
+} 
+
+section.contact .line-title .ln1 {
+   position: absolute;
+   height: 2px;
+   width: 100%;
+   background-color: black;
+   top: 20px;
+}
+
+section.contact form {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+section.contact form .input-wraper {
+    float: left;
+    padding: 5px;
+}
+
+section.contact form .w50 {
+    width: 50%;
+}
+
+section.contact form .w100 {
+    width: 100%;
+}
+
+section.contact form .input-wraper input[type=text] {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+section.contact form .input-wraper textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 120px;
+    padding: 8px;
+    resize: none;
+}
+
+section.contact form .input-wraper:nth-of-type(5) {
+    text-align: center;
+}
+
+section.contact form .input-wraper input[type=submit] {
+    cursor: pointer;
+    border: 0;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    text-align: center;
+    width: 100px;
+    background-color: #EB2D2D;
+    display: inline-block;
+    line-height: 45px;
+}
+
+section.contact form .input-wraper input[type=submit]:hover {
+    transition: 250ms ease-out;
+    background-color: #B21E1E;
+}
+
+section.contact form .input-wraper input, section.contact form .input-wraper textarea {
+    outline: 0;
+}
+
+footer {
+    padding: 40px 2%;
+    background-color: #252525;
+}
+
+footer nav {
+    float: left;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav ul li {
+    float: left;
+    font-size: 19px;
+    padding: 0 20px;
+    font-style: italic;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    float: right;
+    color: white;
+    font-size: 19px;
+}
+
+footer nav ul li a[href^="index"] {
+    color: #EB2D2D;
+}
+
+footer nav ul li a:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid white;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in;
+}
+
+footer nav ul li a[href^="index"]:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid #EB2D2D;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in;
+}
+
+footer nav ul li a:hover:after {
+    transform: scale(1);
+}
+
 @media screen and (max-width: 1400px) {
     
     section.banner {
@@ -416,6 +581,22 @@ section.services-description .half-two .statement-single .navigation .name-state
 
     section.services-description .half-two .statement-single p {
         font-size: 18px;
+    }
+
+    section.contact form .w50 {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer nav {
+        display: none;
+    }
+
+    footer p {
+        float: none;
     }
 }
 
