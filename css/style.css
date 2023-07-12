@@ -179,7 +179,7 @@ section.vehicle-highlight .line-title h2 {
     padding: 0 20px;
 } 
 
-section.vehicle-highlight .line-title .ln1 {
+section.vehicle-highlight .line-title .ln-one {
    position: absolute;
    height: 2px;
    width: 100%;
@@ -365,7 +365,7 @@ section.contact .line-title h2 {
     padding: 0 20px;
 } 
 
-section.contact .line-title .ln1 {
+section.contact .line-title .ln-one {
    position: absolute;
    height: 2px;
    width: 100%;
@@ -434,6 +434,10 @@ section.contact form .input-wraper input, section.contact form .input-wraper tex
     outline: 0;
 }
 
+section.contact form .input-wraper input:focus::placeholder, section.contact form .input-wraper textarea:focus::placeholder {
+    color: transparent;
+}
+
 footer {
     padding: 40px 2%;
     background-color: #252525;
@@ -489,6 +493,140 @@ footer nav ul li a:hover:after {
     transform: scale(1);
 }
 
+header#header-one {
+    border-bottom: 3px solid #EB2D2D;
+}
+
+section.sell {
+    padding: 90px 2%;
+    min-height: 90%;
+}
+
+section.sell .line-title {
+    position: relative;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section.sell .line-title h2 {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 20px;
+} 
+
+section.sell .line-title .ln-one {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    top: 20px;
+}
+
+section.sell .content-sell {
+    margin-top: 40px;
+}
+
+section.sell .content-sell .container .sidebar {
+    float: left;
+    width: 30%;
+}
+
+section.sell .content-sell .container .sidebar .search-one {
+    width: 300px;
+}
+
+section.sell .content-sell .container .sidebar .search-one h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+section.sell .content-sell .container .sidebar .search-one .price-bar {
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    margin-top: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+section.sell .content-sell .container .sidebar .search-one .price-bar .price-bar-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, rgb(255,255,255),rgb(200,200,200));
+}
+
+section.sell .content-sell .container .sidebar .search-one .price-bar .pointer-bar {
+    background-image: linear-gradient(to bottom, rgb(255,255,255),rgb(180,180,180));
+    border-radius: 8px;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: calc(30% - 13px);
+    top: -3px;
+    border: 1px solid #929292;
+}
+
+section.sell .content-sell .container .sidebar .search-one .search-value {
+    margin-top: 8px;
+}
+
+section.sell .content-sell .container .sidebar .search-one .search-value p {
+    color: black;
+    font-size: 15px;
+}
+
+section.sell .content-sell .container .sidebar .search-one .search-value p:nth-of-type(1) {
+    float: left;
+}
+
+section.sell .content-sell .container .sidebar .search-one .search-value p:nth-of-type(2) {
+    float: right;
+}
+
+section.sell .content-sell .container .sidebar .search-two {
+    margin-top: 40px;
+}
+
+section.sell .content-sell .container .sidebar .search-two h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+section.sell .content-sell .container .sidebar .search-two .form-sell-wraper {
+    margin-top: 8px;
+}
+
+section.sell .content-sell .container .sidebar .search-two .form-sell-wraper label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+section.sell .content-sell .container .sidebar .search-two .form-sell-wraper span {
+    padding: 0 8px;
+    vertical-align: 3px;
+}
+
+section.sell .content-sell .container .sidebar .search-two .form-sell-wraper input[type=checkbox] {
+    display: none;
+}
+
 @media screen and (max-width: 1400px) {
     
     section.banner {
@@ -538,7 +676,7 @@ footer nav ul li a:hover:after {
     }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 880px) {
 
     header nav.desktop {
         display: none;
