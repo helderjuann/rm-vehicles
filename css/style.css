@@ -349,6 +349,10 @@ section.contact {
     padding: 60px 2%;
 }
 
+section#home {
+    margin-top: 80px;
+}
+
 section.contact .line-title {
     position: relative;
     text-align: center;
@@ -440,6 +444,7 @@ section.contact form .input-wraper input:focus::placeholder, section.contact for
 }
 
 footer {
+    margin-top: 20px;
     padding: 40px 2%;
     background-color: #252525;
 }
@@ -498,7 +503,7 @@ header#header-one {
     border-bottom: 3px solid #EB2D2D;
 }
 
-section.sell {
+section.sell, section.about {
     padding: 90px 2%;
     min-height: 90%;
 }
@@ -745,6 +750,197 @@ section.sell .content-sell .container .showcase-sale .showcase-highlight .car-in
     background-color: #B21E1E;
 }
 
+section.about .line-title {
+    position: relative;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section.about .line-title h2 {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 20px;
+} 
+
+section.about .line-title .ln-one {
+   position: absolute;
+   height: 2px;
+   width: 100%;
+   background-color: black;
+   top: 20px;
+}
+
+section.about .container {
+    margin-top: 30px;
+    max-width: 768px;
+}
+
+section.about .container .img-highlight {
+    width: 100%;
+    padding-top: 65%;
+    background-image: url(../assets/about-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.about .container .author-description {
+    margin-top: 20px;
+}
+
+section.about .container .author-description h2 {
+    font-size: 24px;
+}
+
+section.about .container .author-description p {
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+section.about .container .flex-author {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: -30px;
+}
+
+section.about .container .flex-author .img-author {
+    width: 25%;
+    padding-top: 25%;
+    background-image: url(../assets/about-img-logo.jpg);
+    background-size: 100% 100%;
+    min-width: 200px;
+    max-height: 200px;
+}
+
+section.about .container .flex-author .author-description-two {
+    width: 75%;
+}
+
+section.about .container .flex-author .author-description-two p {
+    font-size: 18px;
+    padding: 10px;
+}
+
+section.about .container .author-description-three {
+    position: relative;
+    top: -60px;
+}
+
+section.about .container .author-description-three p {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: -140px;
+}
+
+section.gallery .line-title {
+    position: relative;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section.gallery .line-title h2 {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 20px;
+} 
+
+section.gallery .line-title .ln-one {
+   position: absolute;
+   height: 2px;
+   width: 100%;
+   background-color: black;
+   top: 20px;
+}
+
+section.gallery .space-bet {
+    margin-top: 50px;
+}
+
+section.gallery .container {
+    max-width: 1200px;
+    padding: 0 4%;
+}
+
+section.gallery .container .img-wraper {
+    float: left;
+    padding-top: 33.3%;
+    width: 33.3%;
+    background-color: #ccc;
+    position: relative;
+    border: 5px solid #fff;
+}
+
+section.gallery .container .img-wraper .img-gallery {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.gallery .container .img-wraper .one {
+    background-image: url(../assets/car-1.jpg);
+}
+
+section.gallery .container .img-wraper .two {
+    background-image: url(../assets/car-2.jpg);
+}
+
+section.gallery .container .img-wraper .three {
+    background-image: url(../assets/car-3.jpg);
+}
+
+section.gallery .container .img-wraper .four {
+    background-image: url(../assets/car-4.jpg);
+}
+
+section.gallery .container .img-wraper .five {
+    background-image: url(../assets/car-5.jpg);
+}
+
+section.gallery .container .img-wraper .six {
+    background-image: url(../assets/car-6.jpg);
+}
+
+section.gallery .container .img-wraper .seven {
+    background-image: url(../assets/car-7.jpg);
+}
+
+section.gallery .container .img-wraper .eight {
+    background-image: url(../assets/car-8.jpg);
+}
+
+section.gallery .container .img-wraper .nine {
+    background-image: url(../assets/car-9.jpg);
+}
+
+section.gallery .container .img-wraper .ten {
+    background-image: url(../assets/car-10.jpg);
+}
+
+section.gallery .container .img-wraper .eleven {
+    background-image: url(../assets/car-11.jpg);
+}
+
+section.gallery .container .img-wraper .twelve {
+    background-image: url(../assets/car-12.jpg);
+}
+
 @media screen and (max-width: 1400px) {
     
     section.banner {
@@ -908,15 +1104,51 @@ section.sell .content-sell .container .showcase-sale .showcase-highlight .car-in
     }
 }
 
+@media screen and (max-width: 700px) {
+
+    section.about .container .author-description h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    section.about .container .flex-author .img-author {
+        display: none;
+    }
+
+    section.about .container .flex-author .author-description-two {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 580px) {
+
+    header div.logo img {
+        width: 80%;
+        position: relative;
+        top: 15px;
+    }
 
     section.banner .text-banner {
         padding: 40px;
     }
     
     section.banner .text-banner .text-banner-single {
+        width: 170px;
         font-size: 18px;
         height: 70px !important;
+    }
+    
+    section.banner .text-banner .text-banner-single:nth-of-type(2) {
+        width: 150px;
+    }
+    
+    section.banner .text-banner .text-banner-single:nth-of-type(3) {
+        width: 130px;
+    }
+    
+    section.banner .text-banner .text-banner-single:nth-of-type(4) {
+        font-size: 18px;
+        width: 240px;
     }
 
     section.vehicle-highlight .container .showcase-highlight {
