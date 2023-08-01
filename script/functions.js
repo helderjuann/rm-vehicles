@@ -25,6 +25,9 @@ $( function() {
             $('.pointer-bar').css('left',(mouseX-13)+'px');
             currentValue = (mouseX / elBase.width()) * 100;
             $('.price-bar-fill').css('width',currentValue+'%');
+
+            nowPrice = currentValue / 100 * maxPrice;
+            $('.search-price').html('R$'+nowPrice);
         }
     })
 
