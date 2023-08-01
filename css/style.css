@@ -566,7 +566,7 @@ section.sell .content-sell .container .sidebar .search-one .price-bar .price-bar
     position: absolute;
     left: 0;
     top: 0;
-    width: 30%;
+    width: 0;
     height: 20px;
     border-radius: 20px;
     background-image: linear-gradient(to bottom, rgb(255,255,255),rgb(200,200,200));
@@ -579,7 +579,7 @@ section.sell .content-sell .container .sidebar .search-one .price-bar .pointer-b
     width: 26px;
     height: 26px;
     position: absolute;
-    left: calc(30% - 13px);
+    left: 0;
     top: -3px;
     border: 1px solid #929292;
 }
