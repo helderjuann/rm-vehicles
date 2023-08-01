@@ -11,10 +11,12 @@ $( function() {
 
     $(document).mouseup(function() {
         isDrag = false;
+        enableTextS();
     })
 
     $('.price-bar').mousemove(function(e) {
         if (isDrag == true) {
+            disableTextS();
             var elBase = $(this);
             var mouseX = e.pageX - elBase.offset().left;
             if (mouseX < 0)
@@ -30,6 +32,22 @@ $( function() {
             $('.search-price').html('R$'+nowPrice);
         }
     })
+
+    function disableTextS() {
+        $('body').css('-webkit-user-select','none');
+        $('body').css('-moz-user-select','none');
+        $('body').css('-ms-user-select','none');
+        $('body').css('-o-user-select','none');
+        $('body').css('user-select','none');
+    }
+
+    function enableTextS() {
+        $('body').css('-webkit-user-select','none');
+        $('body').css('-moz-user-select','none');
+        $('body').css('-ms-user-select','none');
+        $('body').css('-o-user-select','none');
+        $('body').css('user-select','none');
+    }
 
 
 
