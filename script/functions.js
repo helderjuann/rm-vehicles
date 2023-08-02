@@ -71,7 +71,15 @@ $( function() {
         $('body').css('user-select','none');
     }
 
+    desktopScroll();
 
-
+    function desktopScroll() {
+        $('#contact').click(function() {
+            $('html, body').animate({
+                scrollTop: $(document).height()
+            }, 1000);
+            return false;
+        });
+    }
 
 })
