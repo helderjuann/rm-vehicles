@@ -82,4 +82,33 @@ $( function() {
         });
     }
 
+    var amtStatement = $('.statement-single p').length;
+    var curIndex = 0;
+
+    startStatements();
+    browseStatements();
+
+    function startStatements() {
+        $('.statement-single p').hide();
+        $('.statement-single p').eq(0).show();
+    }
+
+    function browseStatements() {
+        $('[next]').click(function() {
+            curIndex++;
+            if (curIndex >= amtStatement)
+                curIndex = 0;
+            $('.statement-single p').hide();
+            $('statement-single p').eq(0).show();
+        })
+
+        $('[prev]').click(function() {
+            curIndex--;
+            if (curIndex < 0)
+                curIndex = amtStatement-1;
+                $('.statement-single p').hide();
+                $('statement-single p').eq(curIndex).show();
+        })
+    }
+
 })
