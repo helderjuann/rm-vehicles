@@ -29,9 +29,31 @@ $( function() {
             $('.price-bar-fill').css('width',currentValue+'%');
 
             nowPrice = currentValue / 100 * maxPrice;
+            nowPrice = formatPrice(nowPrice);
             $('.search-price').html('R$'+nowPrice);
         }
     })
+
+    function formatPrice(nowPrice) {
+        nowPrice = nowPrice.toFixed(2);
+        priceArr = nowPrice.split('.');
+
+        var newPrice = formatTotal(priceArr);
+
+        return newPrice;
+    }
+
+    function formatTotal(priceArr) {
+        if (priceArr[0] < 1000) {
+            return priceArr[0]+','+priceArr[1];
+        } else if (priceArr[0] < 10000) {
+            return priceArr[0][0]+'.'+priceArr[0].substr(1,priceArr[0].length)+
+            ','+priceArr[1];
+        } else {
+            return priceArr[0][0]+priceArr[0][1]+'.'+priceArr[0].substr(2,priceArr[0].length)+
+            ','+priceArr[1];
+        }
+    }
 
     function disableTextS() {
         $('body').css('-webkit-user-select','none');
