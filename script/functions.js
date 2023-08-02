@@ -22,7 +22,7 @@ $( function() {
             if (mouseX < 0)
                 mouseX = 0;
             if (mouseX > elBase.width())
-                mouseX = el.Base.width();
+                mouseX = elBase.width();
             
             $('.pointer-bar').css('left',(mouseX-13)+'px');
             currentValue = (mouseX / elBase.width()) * 100;
