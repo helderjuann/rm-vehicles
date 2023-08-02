@@ -99,7 +99,7 @@ $( function() {
             if (curIndex >= amtStatement)
                 curIndex = 0;
             $('.statement-single p').hide();
-            $('statement-single p').eq(0).show();
+            $('.statement-single p').eq(0).show();
         })
 
         $('[prev]').click(function() {
@@ -107,7 +107,7 @@ $( function() {
             if (curIndex < 0)
                 curIndex = amtStatement-1;
                 $('.statement-single p').hide();
-                $('statement-single p').eq(curIndex).show();
+                $('.statement-single p').eq(curIndex).show();
         })
     }
 
