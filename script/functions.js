@@ -64,11 +64,11 @@ $( function() {
     }
 
     function enableTextS() {
-        $('body').css('-webkit-user-select','none');
-        $('body').css('-moz-user-select','none');
-        $('body').css('-ms-user-select','none');
-        $('body').css('-o-user-select','none');
-        $('body').css('user-select','none');
+        $('body').css('-webkit-user-select','auto');
+        $('body').css('-moz-user-select','auto');
+        $('body').css('-ms-user-select','auto');
+        $('body').css('-o-user-select','auto');
+        $('body').css('user-select','auto');
     }
 
     desktopScroll();
