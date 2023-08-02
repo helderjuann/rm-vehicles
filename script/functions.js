@@ -105,7 +105,7 @@ $( function() {
         $('[prev]').click(function() {
             curIndex--;
             if (curIndex < 0)
-                curIndex = amtStatement-1;
+                curIndex = amtStatement - 1;
                 $('.statement-single p').hide();
                 $('.statement-single p').eq(curIndex).show();
         })
