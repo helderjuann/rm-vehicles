@@ -323,26 +323,12 @@ section.services-description .half-two .statement-single p {
     font-size: 20px;
 }
 
-section.services-description .half-two .statement-single .navigation {
-    margin-top: 30px;
-    float: left;
-    width: 100%;
-    max-width: 700px;
+section.services-description .half-two .statement-slider {
+    padding: 20px;
 }
 
-section.services-description .half-two .statement-single .navigation .arrows {
-    float: left;
-}
-
-section.services-description .half-two .statement-single .navigation .arrows img {
-    margin: 0 10px;
-    cursor: pointer;
-}
-
-section.services-description .half-two .statement-single .navigation .name-statement {
+section.services-description .half-two .statement-slider span {
     float: right;
-    color: #252525;
-    font-size: 23px;
 }
 
 section.contact {
@@ -941,6 +927,44 @@ section.gallery .container .img-wraper .twelve {
     background-image: url(../assets/car-12.jpg);
 }
 
+/* */
+
+.slick-dotted ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.slick-dotted li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background-color: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slick-dotted button:focus {
+    outline: 0;
+}
+
+li.slick-active button {
+    background-color: #353535;
+    color: #353535;
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
 @media screen and (max-width: 1400px) {
     
     section.banner {
@@ -972,12 +996,7 @@ section.gallery .container .img-wraper .twelve {
 
     section.services-description .half-two {
         width: 100%;
-    }
-
-    section.services-description .half-two .statement-single .navigation {
-        width: 100%;
-        max-width: 1400px;
-    } */
+    }   */
 
     section.sell .content-sell .container .showcase-sale .showcase-highlight {
         width: 100%;
